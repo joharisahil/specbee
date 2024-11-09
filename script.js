@@ -1,4 +1,3 @@
-// Speaker details data
 const speakerDetails = {
   speaker1: {
     name: "John Doe",
@@ -36,10 +35,8 @@ const speakerDetails = {
     image: "/images/speaker4.png",
     icon: "/images/Vector.png",
   },
-  // Additional speakers can be added here
 };
 
-// Function to show speaker details in the popover
 function showSpeakerDetails(speakerId) {
   const speaker = speakerDetails[speakerId];
   const popoverContent = `
@@ -62,11 +59,9 @@ function showSpeakerDetails(speakerId) {
   const popover = document.getElementById("popover");
   document.getElementById("popover-content").innerHTML = popoverContent;
 
-  // Show the popover and add class to push down cards
   popover.classList.add("show");
 }
 
-// Function to close the popover
 function closePopover() {
   const popover = document.getElementById("popover");
   popover.classList.remove("show");
