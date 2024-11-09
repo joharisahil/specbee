@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conference Speakers</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="speakers-section">
+      <p class="title">View our Featured Speakers for the Event</p>
+      <p class="description">
+        Speakers are core contributors and industry thought leaders working at
+        <span class="highlight">companies</span> that push for innovation.
+      </p>
+      <!-- Popover and Speaker Cards Wrapper -->
+      <div class="speaker-popover-container">
+        <!-- Popover Container -->
+        <div id="popover" class="popover">
+          <button class="close-btn" onclick="closePopover()">X</button>
+          <div id="popover-content"></div>
+        </div>
+
+        <!-- Slider container with speaker cards -->
+        <div class="slider-container">
+          <!-- Speaker Card 1 -->
+          <div class="navigation-btn">
+            <div class="navigation-left"><</div>
+          </div>
+          <div
+            class="speaker-cards"
+            id="speaker1"
+            onclick="showSpeakerDetails('speaker1')"
+          >
+            <div class="speaker-card">
+              <img src="/images/speaker1.png" alt="John Doe" />
+              <div class="speaker-content">
+                <p class="speaker-name">John Doe</p>
+                <p class="speaker-position">Chief Marketing Officer</p>
+                <p class="speaker-company">Acme Corp</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Speaker Card 2 -->
+          <div
+            class="speaker-cards"
+            id="speaker2"
+            onclick="showSpeakerDetails('speaker2')"
+          >
+            <div class="speaker-card">
+              <img src="/images/speaker2.png" alt="John Doe" />
+              <div class="speaker-content">
+                <p class="speaker-name">John Doe</p>
+                <p class="speaker-position">Chief Engagement Officer</p>
+                <p class="speaker-company">Acquia</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Speaker Cards -->
+          <div
+            class="speaker-cards"
+            id="speaker3"
+            onclick="showSpeakerDetails('speaker3')"
+          >
+            <div class="speaker-card">
+              <img src="/images/speaker3.png" alt="John Doe" />
+              <div class="speaker-content">
+                <p class="speaker-name">John Doe</p>
+                <p class="speaker-position">Chief Technical Developer</p>
+                <p class="speaker-company">Pantheon</p>
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards as needed -->
+          <div
+            class="speaker-cards"
+            id="speaker4"
+            onclick="showSpeakerDetails('speaker4')"
+          >
+            <div class="speaker-card">
+              <img src="/images/speaker4.png" alt="John Doe" />
+              <div class="speaker-content">
+                <p class="speaker-name">John Doe</p>
+                <p class="speaker-position">Chief Marketing Officer</p>
+                <p class="speaker-company">Specbee</p>
+              </div>
+            </div>
+          </div>
+          <div class="navigation-btn">
+            <div class="navigation-left">></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Program Button -->
+
+      <div class="program-container">
+        <div class="program-detail">
+          <p>Click here to see <br />the full program</p>
+          <img
+            src="/images/Arrow 02.png"
+            alt="Arrow pointing to the button"
+            class="arrow-image"
+          />
+        </div>
+        <div class="button-container">
+          <button class="program-button">See the Program</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

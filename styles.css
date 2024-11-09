@@ -1,0 +1,307 @@
+/* Basic styling */
+body {
+    font-family: Metropolis;
+    text-align: center;
+}
+
+.speakers-section {
+    padding: 20px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 10px;    
+}
+
+.description {
+font-size: 18px;
+font-weight: 400;
+line-height: 0;
+text-align: center;
+margin-bottom: 55px;
+}
+
+.highlight{
+color: #003FB4;
+}
+
+/* Popover and speaker cards container */
+.speaker-popover-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Slider styling */
+.slider-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    width: 1234px;
+}
+
+.navigation-btn{
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    margin-top: 142px;
+    background-color: #fff;
+    box-shadow: 4px 10px 24px 0px #0000001A;
+}
+
+.navigation-left{
+    width: 14.63px;
+    height: 8.71px;
+    color: #6F6F6F;
+    margin: 3px;
+}
+
+.speaker-cards {
+    width:243px;
+    height: 249px;/* Allows the content to determine the height */
+    padding: 36px 21px; /* Padding as specified */
+    gap: 16px; /* Space between child elements */
+    border-radius: 10px 0 0 0; /* Rounded corners for top-left */
+    opacity: 1; /* Set to fully visible */
+    background-color: #fff; /* You can specify a background color if needed */
+    box-shadow: 4px 10px 24px 0px #0000001A; /* Optional shadow for elevation */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.speaker-card {
+    width: 100%; /* Fills the width of the parent */
+    height: 100%; /* Adjusts height based on content */
+    /* gap: 16px; Space between elements inside speaker-card */
+    opacity: 1; /* Set to fully visible */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.speaker-cards:hover {
+    transform: scale(1.05);
+}
+
+.speaker-cards img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.speaker-content {
+    width: 243px;
+    height: 83px;
+    gap: 0px;
+    opacity: 0px;  
+}
+
+.speaker-name{
+font-size: 24px;
+font-weight: 700;
+line-height: 24px;
+text-align: center;
+
+}
+
+.speaker-position{
+font-size: 18px;
+font-weight: 600;
+line-height: 0;
+text-align: center;
+
+}
+
+.speaker-company{
+font-size: 16px;
+font-weight: 400;
+line-height: 5px;
+text-align: center;
+color: #6B6B6B;
+}
+
+.program-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 55px;
+}
+
+/* Center the button container horizontally on the page */
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Styling for the text and arrow container */
+.program-detail {
+    position: absolute;
+    left: calc(50% - 400px); /* Adjust positioning to place it to the left of the button */
+    top: 18px;
+    text-align: center;
+}
+
+.program-detail p {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    font-weight: 400;
+    font-family: Work Sans;
+    width: 150px;
+    height: 42.65px;
+    margin-top: 14px;
+    margin-left: 24px;
+}
+
+/* Styling for the arrow image */
+.arrow-image {
+    /* margin-top: 15px; */
+    margin-left: 143px;
+    width: 140px;
+    height: 51.79px;
+}
+
+/* Button styling */
+.program-button {
+    background-color: #003FB4;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    cursor: pointer; 
+    font-size: 20px;
+    width: 405px;
+    height: 58.9px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.popover {
+    display: none;
+
+    width: 1100px;
+    height: 233px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 4px 10px 24px 0px #0000001A;
+    border-radius: 8px;
+    z-index: 1000;
+    text-align: left;
+    margin-bottom: 20px; /* Space between popover and speaker cards */
+    transition: all 0.3s ease; /* Smooth animation */
+    position: relative; /* Positioning context for the close button */
+}
+
+.popover-content {
+    text-align: left;
+}
+
+.popover.show {
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333; /* Color for the close button */
+}
+
+
+/* Popover container */
+.popover-row {
+    margin-left: -45px;
+    width: 1150px;
+    height: 231px;
+    margin-top: -18px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Image column styling */
+.popover-image-column {
+    flex: 0.8; /* Reduced flex to make more space for info column */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.popover-image {
+    width: 150px;
+    height: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Info column styling */
+.popover-info-column {
+    flex: 2; /* Increased flex value for more space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.popover-name {
+    width: 113px;
+    height: 24px;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 24px;
+}
+
+.popover-title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+}
+
+.popover-company {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #6B6B6B;   
+}
+
+/* Dividing line styling */
+.dividing-line {
+    width: 50px; /* Further reduced width */
+    height: 0px;
+    border: 1px solid #B7B7B7;
+    transform: rotate(-90deg);
+    margin-left: 20px; /* Reduced margin to gain space */
+}
+
+/* Description column styling */
+.popover-description-column {
+    flex: 2;
+}
+
+.popover-description {
+    font-family: Lora;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    width: 732px;
+    height: 96px;
+}
